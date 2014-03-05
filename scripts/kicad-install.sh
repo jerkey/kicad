@@ -112,7 +112,8 @@ install_prerequisites()
     fi
 
     # ensure bzr name and email are set.  No message since bzr prints an excellent diagnostic.
-    bzr whoami || exit 2
+    # THIS PREVENTS PEOPLE FROM INSTALLING KICAD WHO AREN'T DEVELOPERS WHO LOVE BZR
+    # bzr whoami || exit 2
 }
 
 
